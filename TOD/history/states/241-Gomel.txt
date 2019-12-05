@@ -1,0 +1,22 @@
+state = {
+	id = 241
+	name = "STATE_241"
+
+	history = {
+		owner = RUS
+		victory_points = {
+			9288 8
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 2
+		}
+		add_core_of = RUS
+	}
+
+	provinces = {
+		238 315 343 371 546 6589 9288 9342 11229 11298 11325
+	}
+	manpower = 990593
+	state_category = three
+}

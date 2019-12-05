@@ -1,0 +1,21 @@
+state = {
+	id = 347
+	name = "STATE_347"
+	history = {
+		owner = DAM
+		buildings = {
+			infrastructure = 4
+			
+		}
+		add_core_of = GER
+		add_core_of = DAM
+	victory_points = {
+			3574 1
+		}
+	}
+	provinces = {
+		589 3574
+	}
+	manpower = 323748
+	state_category = four
+}

@@ -1,0 +1,26 @@
+state = { #Qianzhong
+	id = 603
+	name = "STATE_603"
+
+	history = {
+		owner = YUN
+		add_core_of = YUN
+		add_core_of = SQI
+		add_core_of = QIE
+		add_core_of = FNG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			4504 5
+		}
+	}
+
+	provinces = {
+		1010 4325 4532 8095 10616 10763 11972
+	}
+	manpower = 3086400
+	state_category = four
+}

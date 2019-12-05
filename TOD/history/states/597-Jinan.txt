@@ -1,0 +1,25 @@
+state = { #Jinan
+	id = 597
+	name = "STATE_597"
+	manpower = 38758200
+	state_category = four
+
+	history = {
+		owner = QIE
+		add_core_of = QIE
+		add_core_of = SQI
+		add_core_of = FNG
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			air_base = 3
+		}
+		victory_points = {
+			1069 10
+		}
+	}
+
+	provinces = {
+		1069 4037 4089 10072 10043 10102 12045 12069
+	}
+}

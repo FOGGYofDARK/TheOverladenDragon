@@ -1,0 +1,17 @@
+state = {
+	id = 916
+	name = "STATE_916"
+
+	history = {
+		owner = POR
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces = {
+		8219
+	}
+	manpower = 374500
+	state_category = one
+}

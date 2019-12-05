@@ -1,0 +1,27 @@
+state = { #Hubei
+	id = 620
+	name = "STATE_620"
+	manpower = 21401000
+
+	state_category = four
+
+	history = {
+		owner = AOG
+		add_core_of = QIE
+		add_core_of = SQI
+		add_core_of = AOG
+		add_core_of = FNG
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			1612 1
+		}
+	}
+
+	provinces = {
+		1612 4009 4130 7019 7580 7596 7609 7625 8072 9934 10474 12408
+	}
+}

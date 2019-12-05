@@ -1,0 +1,19 @@
+state = {
+	id = 1092 
+	name = "STATE_1092"
+	manpower = 300000
+	state_category = two
+	
+	history = {
+		owner = GRE
+		add_core_of = GRE
+		add_core_of = BUL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+	provinces = {
+		6857 9818 11813
+	}
+}

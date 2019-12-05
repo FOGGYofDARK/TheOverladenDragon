@@ -1,0 +1,17 @@
+state = {
+	id = 954
+	name = "STATE_954"
+
+	history = {
+		owner = POR
+		buildings = {
+			infrastructure = 3
+		}
+	}
+
+	provinces = {
+		12950
+	}
+	manpower = 392200
+	state_category = wasteland
+}
