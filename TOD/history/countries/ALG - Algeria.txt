@@ -1,0 +1,166 @@
+﻿capital = 459
+
+OOB = "empty"
+
+set_research_slots = 2
+set_technology = {
+	### INF ###
+	infantry_weapons = 1
+	transport = 1
+}
+
+### Navy - MtG ###
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull = 1
+		basic_naval_mines = 1
+		interwar_light_ship_hull = 1
+		weltkrieg_cruiser_hull = 1
+		interwar_cruiser_hull = 1
+		weltkrieg_submarine_hull = 1
+		submarine_mine_laying = 1
+		interwar_submarine_hull = 1
+
+		## Modules##
+		torpedo_tech_one = 1
+		gunnery_tech_one = 1
+		ss_torpedo_module_one = 1
+		ss_utility_one = 1
+		dd_gun_module_one = 1
+		dd_asw_module_one = 1
+		dd_utility_module_one = 1
+		dd_utility_module_one = 1
+		dd_torpedo_module_one = 1
+		cruiser_gun_module_one = 1
+		cruiser_specialisation_module_one = 1
+	}
+}
+
+### Navy - Non MtG ###
+if = {
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull_nonmtg = 1
+		interwar_light_ship_hull_nonmtg = 1
+		weltkrieg_cruiser_hull_nonmtg = 1
+		interwar_cruiser_hull_nonmtg = 1
+		weltkrieg_submarine_hull_nonmtg = 1
+		interwar_submarine_hull_nonmtg = 1
+	}
+}
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1888.15.6"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	radicalism = 12
+	socialism = 12
+	reformism = 12
+	liberalism = 12
+	conservatism = 12
+	authoritarianis = 12
+	despotism = 12
+	totalism = 16
+}
+
+### Leaders
+create_field_marshal = {
+	name = "Ferhat Abbas"
+	portrait_path = "gfx/leaders/ALG/Portrait_ALG_al_Ghani.tga"
+	traits = {
+		offensive_doctrine
+		media_personality
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Mostefa Ben Boulaïd"
+	portrait_path = "gfx/leaders/ALG/Portrait_ALG_Amerzaine.tga"
+	traits = {
+		career_officer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Larbi Ben M'hidi"
+	portrait_path = "gfx/leaders/ALG/Portrait_ALG_Bouali.tga"
+	traits = {
+		commando
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Youcef Zighoud"
+	portrait_path = "gfx/leaders/ALG/Portrait_ALG_Farès.tga"
+	traits = {
+		trait_reckless
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Krim Belkacem"
+	portrait_path = "gfx/leaders/ALG/Portrait_ALG_Mohammedi.tga"
+	traits = {
+		politically_connected
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### Navy Leader
+
+create_navy_leader = {
+	name = "Ahmed Francis"
+	portrait_path = "gfx/leaders/ALG/Portrait_ALG_Ouafi.tga"
+	traits = {
+		superior_tactician
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_country_leader = {
+	name = "Oskar_Dirlewanger"
+	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
+	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
+	expire = "1965.1.1"
+	ideology = socialism_subtype
+	traits = {}
+}

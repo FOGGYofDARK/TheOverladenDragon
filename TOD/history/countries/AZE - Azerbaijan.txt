@@ -1,0 +1,88 @@
+﻿capital = 990
+
+oob = "AZE"
+
+set_technology = {
+	### INF ###
+	infantry_weapons = 1
+	tech_support = 1
+	tech_mountaineers = 1
+	tech_engineers = 1
+}
+
+set_research_slots = 2
+
+add_ideas = {
+	AZE_Nasib_Yusifbeyli_hog_sco
+	AZE_Mammad_Yusif_Jafarov_for_sco
+	AZE_Abdulali_bey_Amirjanov_eco_sco
+	AZE_Behbud_Khan_Javanshir_sec_sco
+}
+
+set_war_support = 0.20
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1888.15.6"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	radicalism = 12
+	socialism = 12
+	reformism = 12
+	liberalism = 12
+	conservatism = 12
+	authoritarianis = 12
+	despotism = 12
+	totalism = 16
+}
+
+create_country_leader = {
+	name = "Memmed Emin Rasulzade"
+	desc = "POLITICS_RASULZADE_DESC"
+	picture = "Portrait_Azerbaijan_Rasulzade.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {}
+}
+
+### Field Marshal
+create_field_marshal = {
+	name = "Ali-Agha Shikhlinski"
+	portrait_path = "gfx/leaders/AZE/Portrait_Azerbaijan_Ali_Agha_Shikhlinski.tga"
+	traits = {
+		old_guard
+		defensive_doctrine
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+### Corps Commander
+create_corps_commander = {
+	name = "Habib Bey Salimov"
+	portrait_path = "gfx/leaders/AZE/Portrait_Azerbaijan_Habib_Bey_Salimov.tga"
+	traits = {
+		trait_mountaineer
+		infantry_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_country_leader = {
+	name = "Oskar_Dirlewanger"
+	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
+	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
+	expire = "1965.1.1"
+	ideology = socialism_subtype
+	traits = {}
+}

@@ -1,0 +1,214 @@
+﻿capital = 898
+
+set_research_slots = 2
+set_technology = {
+	### Tanks ###
+	gwtank = 1
+	### INF ###
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	transport = 1
+	### AIR ###
+	early_fighter = 1
+}
+
+### Navy - MtG ###
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull = 1
+		basic_naval_mines = 1
+		interwar_light_ship_hull = 1
+		weltkrieg_cruiser_hull = 1
+		interwar_cruiser_hull = 1
+
+		## Modules##
+		gunnery_tech_one = 1
+		dd_gun_module_one = 1
+		dd_asw_module_one = 1
+		dd_utility_module_one = 1
+		dd_utility_module_one = 1
+		cruiser_gun_module_one = 1
+		cruiser_specialisation_module_one = 1
+	}
+}
+
+### Navy - Non MtG ###
+if = {
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull_nonmtg = 1
+		interwar_light_ship_hull_nonmtg = 1
+		weltkrieg_cruiser_hull_nonmtg = 1
+		interwar_cruiser_hull_nonmtg = 1
+	}
+}
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1888.15.6"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	radicalism = 12
+	socialism = 12
+	reformism = 12
+	liberalism = 12
+	conservatism = 12
+	authoritarianis = 12
+	despotism = 12
+	totalism = 16
+}
+
+create_country_leader = {
+	name = "Waldir Bouhid"
+	desc = "POLITICS_WALDIR_BOUHID_DESC"
+	picture = "gfx/leaders/South America/portrait_south_america_generic_7_edit.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Joaquim de Magalhães Barata"
+	desc = "POLITICS_BARATA_DESC"
+	picture = "Portrait_AMA_Joaquim_Barata.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Lauro Sodré"
+	desc = "POLITICS_LAURO_SODRE_HOS_DESC"
+	picture = "Portrait_AMA_Lauro_Sodre.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Antonio Faciola"
+	desc = "POLITICS_ANTONIO_FACIOLA_DESC"
+	picture = "Portrait_AMA_Antonio_Faciola.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Landry Sales Gonçalves"
+	desc = "POLITICS_LANDRY_SALES_DESC"
+	picture = "Portrait_AMA_Landry_Sales.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Efigênio Sales"
+	desc = "POLITICS_EFIGENIO_SALES_DESC"
+	picture = "Portrait_AMA_Efigenio_Sales.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Alvaro Botelho Maia"
+	desc = "POLITICS_ALVARO_BOTELHO_MAIA_DESC"
+	picture = "Portrait_AMA_Alvaro_Botelho.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Cláudio Santoro"
+	desc = "POLITICS_CLAUDIO_SANTORO_DESC"
+	picture = "Portrait_AMA_Claudio_Santoro.tga"
+	expire = "1965.1.1"
+	ideology = radical_socialist_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Pedro Ventura Pomar "
+	desc = "POLITICS_AMA_POMAR_DESC"
+	picture = "gfx/leaders/BRA/Portrait_BRA_Pedro_Pomar.tga"
+	expire = "1965.1.1"
+	ideology = syndicalist_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "João Amazonas"
+	desc = "POLITICS_JOAO_AMAZONAS_DESC"
+	picture = "gfx/leaders/BRA/Portrait_BRA_Joao_Amazonas.tga"
+	expire = "1965.1.1"
+	ideology = totalist_subtype
+	traits = {}
+}
+
+
+create_field_marshal = { #Auto-Generated
+	name = "Joaquim de Magalhães Barata"
+	portrait_path = "gfx/leaders/AMA/Portrait_AMA_Joaquim_Barata.tga"
+	traits = {
+		media_personality
+		war_hero
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+### Corps Commander
+create_corps_commander = { #Auto-Generated
+	name = "Guilherme Paraense"
+	portrait_path = "gfx/leaders/AMA/Portrait_AMA_Guilherme_Paraense.tga"
+	traits = {
+		career_officer
+		infantry_officer
+		trickster
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_navy_leader = { #Auto-Generated
+	name = "Benjamin de Almeida Sodré"
+	portrait_path = "gfx/leaders/AMA/Portrait_AMA_Benjamin_Sodre.tga"
+	traits = {
+		spotter
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_country_leader = {
+	name = "Oskar_Dirlewanger"
+	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
+	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
+	expire = "1965.1.1"
+	ideology = socialism_subtype
+	traits = {}
+}

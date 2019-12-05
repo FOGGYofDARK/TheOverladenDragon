@@ -1,0 +1,529 @@
+﻿capital = 48
+oob = "BUL"
+set_naval_oob = "BUL_naval"
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+
+	early_fighter = 1
+	cv_early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	cv_naval_bomber1 = 1
+}
+
+### Navy - MtG ###
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull = 1
+		basic_naval_mines = 1
+		interwar_light_ship_hull = 1
+		improved_light_ship_hull = 1
+		weltkrieg_cruiser_hull = 1
+		interwar_cruiser_hull = 1
+		weltkrieg_submarine_hull = 1
+		submarine_mine_laying = 1
+		interwar_submarine_hull = 1
+		improved_submarine_hull = 1
+		weltkrieg_panzerschiff_hull = 1
+		interwar_panzerschiff_hull = 1
+		weltkrieg_dreadnought_hull = 1
+
+		## Modules##
+		torpedo_tech_one = 1
+		torpedo_tech_two = 1
+		gunnery_tech_one = 1
+		gunnery_tech_two = 1
+		ss_torpedo_module_one = 1
+		ss_torpedo_module_two = 1
+		ss_utility_one = 1
+		dd_gun_module_one = 1
+		dd_gun_module_two = 1
+		dd_asw_module_one = 1
+		dd_utility_module_one = 1
+		dd_torpedo_module_one = 1
+		dd_torpedo_module_two = 1
+		cruiser_gun_module_one = 1
+		cruiser_gun_module_two = 1
+		cruiser_specialisation_module_one = 1
+		cruiser_specialisation_module_two = 1
+		ps_gun_module_one = 1
+		ps_gun_module_two = 1
+		ps_hull_module_one = 1
+		ps_hull_module_two = 1
+		fbb_gunnery_tech_one = 1
+		dn_gunnery_tech_one = 1
+		dn_hull_module_one = 1
+	}
+}
+
+### Navy - Non MtG ###
+if = {
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull_nonmtg = 1
+		interwar_light_ship_hull_nonmtg = 1
+		improved_light_ship_hull_nonmtg = 1
+		weltkrieg_cruiser_hull_nonmtg = 1
+		interwar_cruiser_hull_nonmtg = 1
+		weltkrieg_submarine_hull_nonmtg = 1
+		interwar_submarine_hull_nonmtg = 1
+		improved_submarine_hull_nonmtg = 1
+		weltkrieg_panzerschiff_hull_nonmtg = 1
+		interwar_panzerschiff_hull_nonmtg = 1
+		weltkrieg_dreadnought_hull_nonmtg = 1
+	}
+}
+
+country_event = { id = bulgaria.1 days = 1 } #Intro event
+
+set_research_slots = 3
+set_convoys = 40
+set_country_flag = BUL_liberal_government
+
+set_stability = 0.65
+set_war_support = 0.40
+
+add_ideas = {
+	extensive_conscription
+	BUL_military_pensions_idea
+	BUL_ailing_economy_idea
+	BUL_Aleksandar_Malinov_hog_ade
+	BUL_Nikola_Mushanov_for_ade
+	BUL_Todor_Krastev_eco_ade
+	BUL_Aleksandar_Girginov_sec_ade
+}
+
+add_opinion_modifier = { target = ROM modifier = embargo }
+add_opinion_modifier = { target = SER modifier = embargo }
+add_opinion_modifier = { target = GRE modifier = embargo }
+add_opinion_modifier = { target = RRM modifier = embargo }
+add_opinion_modifier = { target = ROM modifier = Balkans_hates_neighbours }
+add_opinion_modifier = { target = SER modifier = Balkans_hates_neighbours }
+add_opinion_modifier = { target = GRE modifier = Balkans_hates_neighbours }
+add_opinion_modifier = { target = RRM modifier = Balkans_hates_neighbours }
+add_opinion_modifier = { target = SRI modifier = embargo }
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1888.15.6"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	radicalism = 12
+	socialism = 12
+	reformism = 12
+	liberalism = 12
+	conservatism = 12
+	authoritarianis = 12
+	despotism = 12
+	totalism = 16
+}
+
+create_country_leader = {
+	name = "Valko Chervenkov"
+	desc = "POLITICS_VALKO_CHERENKOV_DESC"
+	picture = "Portrait_BUL_Valko_Chervenkov.tga"
+	expire = "1965.1.1"
+	ideology = totalist_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Georgi Dimitrov"
+	desc = "POLITICS_GEORGI_DIMITROV_DESC"
+	picture = "Portrait_BUL_Georgi_Dimitrov.tga"
+	expire = "1965.1.1"
+	ideology = syndicalist_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Mihail Gerdzhikov"
+	desc = "POLITICS_MIHAIL_GERDZHIKOV_DESC"
+	picture = "Portrait_BUL_Mihail_Gerdzhikov.tga"
+	expire = "1965.1.1"
+	ideology = radical_socialist_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Ferdinand I"
+	desc = "POLITICS_FERDINAND_I_DESC"
+	picture = "Portrait_Bulgaria_Tsar_Ferdinand.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Ferdinand I"
+	desc = "POLITICS_FERDINAND_I_DESC"
+	picture = "Portrait_Bulgaria_Tsar_Ferdinand.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Ferdinand I"
+	desc = "POLITICS_FERDINAND_I_DESC"
+	picture = "Portrait_Bulgaria_Tsar_Ferdinand.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Aleksandar Stamboliyski"
+	desc = "POLITICS_ALEKSANDAR_STAMBOLIYSKI_DESC"
+	picture = "Portrait_BUL_Aleksandar_Stamboliyski.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Ferdinand I"
+	desc = "POLITICS_FERDINAND_I_DESC"
+	picture = "Portrait_Bulgaria_Tsar_Ferdinand.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Ferdinand I"
+	desc = "POLITICS_FERDINAND_I_DESC"
+	picture = "Portrait_Bulgaria_Tsar_Ferdinand.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Kimon Georgiev Stoyanov"
+	desc = "POLITICS_KIMON_GEORGIEV_DESC"
+	picture = "Portrait_BUL_Kimon_Griogiev.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {}
+}
+
+### Field Marshals ###
+
+create_field_marshal = {
+	name = "Teodosi Daskalov"
+	picture = "Portrait_BUL_Teodosi_Daskalov.tga"
+	traits = {
+		career_officer
+		old_guard
+		defensive_doctrine
+		skilled_staffer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Boris"
+	picture = "Portrait_Bulgaria_Boris.tga"
+	id = 76891
+	traits = {
+		politically_connected
+		infantry_officer
+		inspirational_leader
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### Corps Commanders ###
+
+create_corps_commander = {
+	name = "Nikola Nedev"
+	picture = "Portrait_BUL_Nikola_Nedev.tga"
+	traits = {
+		old_guard
+		career_officer
+		artillery_officer
+		fortress_buster
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Asen Nikolov"
+	picture = "Portrait_BUL_Asen_Nikolov.tga"
+	traits = {
+		harsh_leader
+		trickster
+		commando
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Konstantin Ivanov Bekyarov"
+	picture = "Portrait_BUL_Konstantin_Ivanov_Bekyarov.tga"
+	traits = {
+		career_officer
+		urban_assault_specialist
+		trait_engineer
+	}
+	skill = 3
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "Vladimir Stoychev"
+	picture = "Portrait_BUL_Vladimir_Stoychev.tga"
+	traits = {
+		career_officer
+		commando
+		trickster
+	}
+	id = 91820
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ivan Valkov"
+	picture = "Portrait_BUL_Ivan_Valkov.tga"
+	traits = {
+		old_guard
+		career_officer
+		skilled_staffer
+	}
+	id = 18401
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Nikola Totev Markov"
+	picture = "Portrait_Bulgaria_Nikola_Totev_Markov.tga"
+	traits = {
+		infantry_officer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Hristo Lukov"
+	picture = "Portrait_Bulgaria_Hristo_Lukov.tga"
+	traits = {
+		artillery_officer
+		hill_fighter
+	}
+	id = 71209
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Prince Kyril"
+	picture = "Portrait_BUL_Prince_Kyril.tga"
+	traits = {
+		politically_connected
+	}
+	id = 91024
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### Navy Leaders ###
+
+create_navy_leader = {
+	name = "Ivan Petrov Variklechkov"
+	picture = "Portrait_BUL_Ivan_Petrov_Variklechkov.tga"
+	traits = {}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+
+### Ship Variants ###
+create_equipment_variant = {
+	name = "Hrabar Class"
+	type = ship_hull_panzerschiff_2
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_secondaries_slot = empty
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+		rear_1_custom_slot = ship_light_medium_battery_1
+	}
+}
+
+create_equipment_variant = {
+	name = "Benkovski Class"
+	type = ship_hull_cruiser_3
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+		rear_1_custom_slot = ship_light_medium_battery_1
+		mid_1_custom_slot = ship_torpedo_1
+		hull_specialization_slot = empty
+	}
+}
+
+create_equipment_variant = {
+	name = "Dobrotich Class"
+	type = ship_hull_light_3
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_light_battery_2
+		mid_1_custom_slot = ship_depth_charge_1
+
+	}
+}
+
+set_country_flag = ub-1_class_ship_variant
+create_equipment_variant = {
+	name = "UB-1 Class"
+	type = ship_hull_submarine_2
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_0
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_0
+
+	}
+	obsolete = yes
+}
+
+set_country_flag = giulio_cesare_class_ship_variant
+create_equipment_variant = {
+	name = "Giulio Cesare Class"
+	type = ship_hull_dreadnought_2
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_super_heavy_battery_0
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_shbb
+		mid_1_custom_slot = ship_super_heavy_battery_0
+		mid_2_custom_slot = ship_super_heavy_battery_0
+		rear_1_custom_slot = ship_super_heavy_battery_0
+	}
+}
+
+set_country_flag = druzki_class_ship_variant
+create_equipment_variant = {
+	name = "Druzki Class"
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+
+	}
+	obsolete = yes
+}
+
+set_country_flag = bespokoyny_class_ship_variant
+create_equipment_variant = {
+	name = "Bespokoyny Class"
+	type = ship_hull_light_2
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+		rear_1_custom_slot = ship_depth_charge_1
+
+	}
+	obsolete = yes
+}
+
+set_country_flag = gagara_class_ship_variant
+create_equipment_variant = {
+	name = "Gagara Class"
+	type = ship_hull_submarine_3
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_2
+		rear_1_custom_slot = ship_torpedo_sub_1
+		mid_1_custom_slot = ship_sonar_1
+
+	}
+	obsolete = yes
+}
+
+create_country_leader = {
+	name = "Oskar_Dirlewanger"
+	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
+	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
+	expire = "1965.1.1"
+	ideology = socialism_subtype
+	traits = {}
+}

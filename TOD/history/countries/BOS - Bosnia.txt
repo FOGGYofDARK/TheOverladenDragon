@@ -1,0 +1,167 @@
+﻿capital = 104
+
+set_research_slots = 3
+
+oob = "BOS"
+
+set_technology = {
+	### Tanks ###
+	### INF ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	### AIR ###
+	early_fighter = 1
+}
+### Navy - MtG ###
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull = 1
+		basic_naval_mines = 1
+		interwar_light_ship_hull = 1
+		weltkrieg_cruiser_hull = 1
+		interwar_cruiser_hull = 1
+
+		## Modules##
+		gunnery_tech_one = 1
+		dd_gun_module_one = 1
+		dd_asw_module_one = 1
+		dd_utility_module_one = 1
+		dd_utility_module_one = 1
+		cruiser_gun_module_one = 1
+		cruiser_specialisation_module_one = 1
+	}
+}
+
+### Navy - Non MtG ###
+
+if = {
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull_nonmtg = 1
+		interwar_light_ship_hull_nonmtg = 1
+		weltkrieg_cruiser_hull_nonmtg = 1
+		interwar_cruiser_hull_nonmtg = 1
+	}
+}
+
+add_ideas = {
+	BOS_Mehmed_Spaho_hog_sco
+	BOS_Dzafer_beg_Kulenovic_for_pau
+	BOS_Osman_Vilovic_eco_sco
+	BOS_Halid_beg_Hrasnica_sec_sco
+}
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1888.15.6"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	radicalism = 12
+	socialism = 12
+	reformism = 12
+	liberalism = 12
+	conservatism = 12
+	authoritarianis = 12
+	despotism = 12
+	totalism = 16
+}
+
+
+create_country_leader = {
+	name = "Georg Dragicevic"
+	desc = "POLITICS_GEORG_DRAGICEVIC_DESC"
+	picture = "Portrait_Bosnia_Georg_Dragicevic.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {}
+}
+
+### Corps Commander
+
+create_corps_commander = { #Auto-Generated
+	name = "Toptani"
+	portrait_path = "gfx/leaders/BOS/Portrait_BOS_Toptani.tga"
+	traits = {
+		old_guard
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### Navy Commander
+
+create_navy_leader = { #Auto-Generated
+	name = "Bocic"
+	portrait_path = "gfx/leaders/BOS/Portrait_BOS_Bocic.tga"
+	traits = {}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = { #Auto-Generated
+	name = "Jakcin"
+	portrait_path = "gfx/leaders/BOS/Portrait_BOS_Jakcin.tga"
+	traits = {
+		seawolf
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = { #Auto-Generated
+	name = "Kinzel"
+	portrait_path = "gfx/leaders/BOS/Portrait_BOS_Kinzel.tga"
+	traits = {
+		superior_tactician
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_navy_leader = { #Auto-Generated
+	name = "Steinfl"
+	portrait_path = "gfx/leaders/BOS/Portrait_BOS_Steinfl.tga"
+	traits = {
+		blockade_runner
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
+
+create_country_leader = {
+	name = "Oskar_Dirlewanger"
+	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
+	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
+	expire = "1965.1.1"
+	ideology = socialism_subtype
+	traits = {}
+}
