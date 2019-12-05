@@ -1,0 +1,801 @@
+﻿capital = 2
+
+oob = "ITA"
+set_naval_oob = "ITA_naval"
+
+set_research_slots = 3
+
+add_opinion_modifier = { target = FRA modifier = embargo }
+add_opinion_modifier = { target = ENG modifier = embargo }
+add_opinion_modifier = { target = SRI modifier = embargo }
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	gwtank = 1
+	early_fighter = 1
+	early_bomber = 1
+	naval_bomber1 = 1
+	CAS1 = 1
+}
+
+### Navy - MtG ###
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull = 1
+		basic_naval_mines = 1
+		interwar_light_ship_hull = 1
+		improved_light_ship_hull = 1
+		weltkrieg_cruiser_hull = 1
+		interwar_cruiser_hull = 1
+		weltkrieg_submarine_hull = 1
+		submarine_mine_laying = 1
+		interwar_submarine_hull = 1
+		improved_submarine_hull = 1
+		weltkrieg_panzerschiff_hull = 1
+		interwar_panzerschiff_hull = 1
+		weltkrieg_fast_battleship_hull = 1
+		interwar_fast_battleship_hull = 1
+		weltkrieg_dreadnought_hull = 1
+		interwar_dreadnought_hull = 1
+
+		## Modules##
+		torpedo_tech_one = 1
+		torpedo_tech_two = 1
+		gunnery_tech_one = 1
+		gunnery_tech_two = 1
+		ss_torpedo_module_one = 1
+		ss_torpedo_module_two = 1
+		ss_utility_one = 1
+		dd_gun_module_one = 1
+		dd_gun_module_two = 1
+		dd_asw_module_one = 1
+		dd_utility_module_one = 1
+		dd_torpedo_module_one = 1
+		dd_torpedo_module_two = 1
+		cruiser_gun_module_one = 1
+		cruiser_gun_module_two = 1
+		cruiser_specialisation_module_one = 1
+		cruiser_specialisation_module_two = 1
+		ps_gun_module_one = 1
+		ps_gun_module_two = 1
+		ps_hull_module_one = 1
+		ps_hull_module_two = 1
+		fbb_gunnery_tech_one = 1
+		dn_gunnery_tech_one = 1
+		dn_hull_module_one = 1
+	}
+}
+
+### Navy - Non MtG ###
+if = {
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull_nonmtg = 1
+		interwar_light_ship_hull_nonmtg = 1
+		improved_light_ship_hull_nonmtg = 1
+		weltkrieg_cruiser_hull_nonmtg = 1
+		interwar_cruiser_hull_nonmtg = 1
+		weltkrieg_submarine_hull_nonmtg = 1
+		interwar_submarine_hull_nonmtg = 1
+		improved_submarine_hull_nonmtg = 1
+		weltkrieg_panzerschiff_hull_nonmtg = 1
+		interwar_panzerschiff_hull_nonmtg = 1
+		weltkrieg_fast_battleship_hull_nonmtg = 1
+		interwar_fast_battleship_hull_nonmtg = 1
+		weltkrieg_dreadnought_hull_nonmtg = 1
+		interwar_dreadnought_hull_nonmtg = 1
+	}
+}
+
+country_event = { id = ita.1 days = 5 }
+
+set_convoys = 60
+set_stability = 0.55
+set_war_support = 0.20
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1888.15.6"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	radicalism = 12
+	socialism = 12
+	reformism = 12
+	liberalism = 12
+	conservatism = 12
+	authoritarianis = 12
+	despotism = 12
+	totalism = 16
+}
+
+### Political Leaders ###
+create_country_leader = {
+	name = "Italo Balbo"
+	picture = "Portrait_ITA_Italo_Balbo.tga"
+	desc = "POLITICS_ITALO_BALBO_DESC"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		dictator
+		warmonger
+	}
+}
+create_country_leader = { # Giovanni Gronchi
+	name = "Giovanni Gronchi"
+	picture = "Portrait_ITA_Giovanni_Gronchi.tga"
+	desc = "POLITICS_GIOVANNI_GRONCHI_DESC"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {}
+}
+create_country_leader = {# Luigi Einaudi
+	name = "Luigi Einaudi"
+	picture = "Portrait_ITA_Luigi_Einaudi.tga"
+	desc = "POLITICS_LUIGI_EINAUDI_DESC"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {}
+}
+create_country_leader = {# Ivanoe Bonomi
+	name = "Ivanoe Bonomi"
+	picture = "Portrait_ITA_Ivanoe_Bonomi.tga"
+	desc = "POLITICS_IVANOE_BONOMI_DESC"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {}
+}
+create_country_leader = {# Carlo Rossi
+	name = "Carlo Rosselli"
+	picture = "Portrait_ITA_Carlo_Rossi.tga"
+	desc = "POLITICS_CARL_ROSSI_DESC"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {}
+}
+
+add_ideas = {
+	ITA_Carlo_Rosselli_hog_sde
+	ITA_Aldo_Garosci_for_sli
+	ITA_Mario_Bracci_eco_sli
+	ITA_Enrico_Martino_sec_sli
+}
+
+### Field Marshals ###
+create_field_marshal = {# Emilio di Bono
+	name = "Emilio di Bono"
+	picture = "Portrait_ITA_Emilio_De_Bono.tga"
+	traits = {
+		war_hero
+		old_guard
+		thorough_planner
+		organizer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_field_marshal = {# Rodolfo Graziani
+	name = "Rodolfo Graziani"
+	picture = "Portrait_ITA_Rodolfo_Graziani.tga"
+	traits = {
+		offensive_doctrine
+		organizer
+		armor_officer
+		fast_planner
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}
+### Generals ###
+create_corps_commander = {# Ettore Bastico
+	name = "Ettore Bastico"
+	picture = "Portrait_ITA_Ettore_Bastico.tga"
+	traits = {
+		trickster
+		career_officer
+	}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 4
+	logistics_skill = 3
+}
+create_corps_commander = {# Annibale Bergonzoli
+	name = "Annibale Bergonzoli"
+	picture = "Portrait_ITA_Annibale_Bergonzoli.tga"
+	traits = {
+		war_hero
+		brilliant_strategist
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {# Alberto Pariani
+	name = "Alberto Pariani"
+	picture = "Portrait_ITA_Alberto_Pariani.tga"
+	traits = {
+		organizer
+		trait_mountaineer
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {# Sebastiano Visconti Prasca
+	name = "Sebastiano Visconti Prasca"
+	picture = "Portrait_ITA_Sebastiano_Visconti_Prasca.tga"
+	traits = {}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = {# Arnaldo Azzi
+	name = "Arnaldo Azzi "
+	picture = "Portrait_ITA_Arnaldo_Azzi.tga"
+	traits = {
+		armor_officer
+		panzer_leader
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {# Enrico Riccardi
+	name = "Enrico Riccardi"
+	picture = "Portrait_ITA_Enrico_Riccardi.tga"
+	traits = {}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {# Gabriele Nasci
+	name = "Gabriele Nasci"
+	picture = "Portrait_ITA_Gabriele_Nasci.tga"
+	traits = {trait_mountaineer}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+create_corps_commander = {# Italo Gariboldi
+	name = "Italo Gariboldi"
+	picture = "Portrait_ITA_Italo_Gariboldi.tga"
+	traits = {hill_fighter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {# Venanzio Gabriotti
+	name = "Venanzio Gabriotti"
+	picture = "Portrait_ITA_Venanzio_Gabriotti.tga"
+	traits = { commando }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = {
+	name = "Fedele de Giorgis"
+	picture = "Portrait_ITA_Fedele_de_Giorgis.tga"
+	traits = {
+		career_officer
+		trait_cautious
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+### Admirals ###
+create_navy_leader = {# Alberto Da Zara
+	name = "Alberto Da Zara"
+	picture = "Portrait_Italy_Alberto_Da_Zara.dds"
+	traits = { superior_tactician spotter }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 4
+	id = 33333
+}
+create_navy_leader = {
+	name = "Gino Pavesi"
+	picture = "Portrait_ITA_Gino_Pavesi.tga"
+	traits = { superior_tactician ironside}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 4
+	id = 33334
+}
+create_navy_leader = {# Raffaele de Courten
+	name = "Raffaele de Courten"
+	picture = "Portrait_ITA_Raffaele_de_Courten.tga"
+	traits = { blockade_runner }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {# Carlo Bergamini
+	name = "Carlo Bergamini"
+	picture = "Portrait_ITA_Carlo_Bergamini.tga"
+	traits = {}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+create_navy_leader = {# Costanzo Ciano
+	name = "Costanzo Ciano"
+	picture = "Portrait_ITA_Costanzo_Ciano.tga"
+	traits = {}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	maneuvering_skill = 3
+	coordination_skill = 3
+}
+create_navy_leader = {# Carlo Bergamini
+	name = "Giovanni Galati"
+	picture = "Portrait_ITA_Giovanni_Galati.tga"
+	traits = {air_controller}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 1
+}
+
+### Ship Variants ###
+create_equipment_variant = {
+	name = "Dante Alighieri Class" #in service with OTT
+	type = ship_hull_dreadnought_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_super_heavy_battery_0
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_shbb
+		mid_1_custom_slot = ship_super_heavy_battery_0
+		rear_1_custom_slot = ship_super_heavy_battery_0
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Giulio Cesare Class" #in service with BUL
+	type = ship_hull_dreadnought_2
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_super_heavy_battery_0
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_shbb
+		mid_1_custom_slot = ship_super_heavy_battery_0
+		mid_2_custom_slot = ship_super_heavy_battery_0
+		rear_1_custom_slot = ship_super_heavy_battery_0
+	}
+}
+
+create_equipment_variant = {
+	name = "Francesco Caracciolo Class"
+	type = ship_hull_dreadnought_2
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_super_heavy_battery_0
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_shbb
+		mid_1_custom_slot = ship_super_heavy_battery_0
+		mid_2_custom_slot = ship_super_heavy_battery_0
+		rear_1_custom_slot = ship_super_heavy_battery_0
+	}
+}
+
+create_equipment_variant = {
+	name = "Re Umberto Class"
+	type = ship_hull_dreadnought_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_super_heavy_battery_0
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_shbb
+		mid_1_custom_slot = ship_super_heavy_battery_0
+		rear_1_custom_slot = ship_super_heavy_battery_0
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Regina Elena Class"
+	type = ship_hull_dreadnought_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_super_heavy_battery_0
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_shbb
+		mid_1_custom_slot = ship_super_heavy_battery_0
+		rear_1_custom_slot = ship_super_heavy_battery_0
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Saint Bon Class"
+	type = ship_hull_dreadnought_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_super_heavy_battery_0
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_shbb
+		mid_1_custom_slot = ship_super_heavy_battery_0
+		rear_1_custom_slot = ship_super_heavy_battery_0
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Nembo Class"
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Indomito Class"
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Artigliere Class"
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Lamp Class"
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Rosolino Pilo Class"
+	type = ship_hull_light_2
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+		rear_1_custom_slot = ship_depth_charge_1
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Giuseppe La Masa Class"
+	type = ship_hull_light_2
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+		rear_1_custom_slot = ship_depth_charge_1
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Palestro Class"
+	type = ship_hull_light_2
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+		rear_1_custom_slot = ship_depth_charge_1
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Giuseppe Sirtori Class"
+	type = ship_hull_light_2
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+		rear_1_custom_slot = ship_depth_charge_1
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Simone Schiaffino Class"
+	type = ship_hull_light_2
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+		rear_1_custom_slot = ship_depth_charge_1
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Carlo Mirabello Class"
+	type = ship_hull_light_3
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_light_battery_2
+		mid_1_custom_slot = ship_depth_charge_1
+
+	}
+}
+
+create_equipment_variant = {
+	name = "Aquila Class"
+	type = ship_hull_light_3
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_light_battery_2
+		mid_1_custom_slot = ship_depth_charge_1
+
+	}
+}
+
+create_equipment_variant = {
+	name = "Alessandro Poerio Class"
+	type = ship_hull_light_3
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_light_battery_2
+		mid_1_custom_slot = ship_depth_charge_1
+
+	}
+}
+
+create_equipment_variant = {
+	name = "Nautilus Class"
+	type = ship_hull_submarine_2
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_0
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Giacinto Pullinom Class"
+	type = ship_hull_submarine_2
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_0
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "S1 Class"
+	type = ship_hull_submarine_2
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_0
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Medusa Class"
+	type = ship_hull_submarine_2
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_0
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "H Class"
+	type = ship_hull_submarine_2
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_0
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "F Class"
+	type = ship_hull_submarine_2
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_0
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "N Class"
+	type = ship_hull_submarine_3
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_2
+		rear_1_custom_slot = ship_torpedo_sub_1
+		mid_1_custom_slot = ship_sonar_1
+
+	}
+}
+
+create_equipment_variant = {
+	name = "X Class"
+	type = ship_hull_submarine_3
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_2
+		rear_1_custom_slot = ship_torpedo_sub_1
+		mid_1_custom_slot = ship_sonar_1
+
+	}
+}
+
+create_equipment_variant = {
+	name = "Andrea Provana Class"
+	type = ship_hull_submarine_3
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_2
+		rear_1_custom_slot = ship_torpedo_sub_1
+		mid_1_custom_slot = ship_sonar_1
+
+	}
+}
+
+create_equipment_variant = {
+	name = "Pacinotti Class"
+	type = ship_hull_submarine_3
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_2
+		rear_1_custom_slot = ship_torpedo_sub_1
+		mid_1_custom_slot = ship_sonar_1
+
+	}
+}
+
+create_equipment_variant = {
+	name = "Pietro Micca Class"
+	type = ship_hull_submarine_3
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_2
+		rear_1_custom_slot = ship_torpedo_sub_1
+		mid_1_custom_slot = ship_sonar_1
+
+	}
+}
+
+create_country_leader = {
+	name = "Oskar_Dirlewanger"
+	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
+	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
+	expire = "1965.1.1"
+	ideology = socialism_subtype
+	traits = {}
+}

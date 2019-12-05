@@ -1,0 +1,417 @@
+﻿capital = 965
+
+oob = "MAF"
+set_naval_oob = "MAF_naval"
+
+set_technology = {
+	### MOD ###
+
+	### General ###
+	electronic_mechanical_engineering = 1
+
+	### Tanks ###
+	gwtank = 1
+	basic_light_tank = 1
+	basic_heavy_tank = 1
+
+	### INF ###
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+
+	### AIR ###
+	early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	cv_early_fighter = 1
+	cv_CAS1 = 1
+	cv_naval_bomber1 = 1
+	fighter1 = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+}
+
+### Navy - MtG ###
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull = 1
+		basic_naval_mines = 1
+		interwar_light_ship_hull = 1
+		improved_light_ship_hull = 1
+		weltkrieg_cruiser_hull = 1
+		interwar_cruiser_hull = 1
+		improved_cruiser_hull = 1
+		weltkrieg_submarine_hull = 1
+		submarine_mine_laying = 1
+		interwar_submarine_hull = 1
+		improved_submarine_hull = 1
+		weltkrieg_carrier_hull = 1
+		interwar_carrier_hull = 1
+		weltkrieg_panzerschiff_hull = 1
+		interwar_panzerschiff_hull = 1
+		improved_panzerschiff_hull = 1
+		weltkrieg_fast_battleship_hull = 1
+		interwar_fast_battleship_hull = 1
+		improved_fast_battleship_hull = 1
+		weltkrieg_dreadnought_hull = 1
+		interwar_dreadnought_hull = 1
+		improved_dreadnought_hull = 1
+		interwar_heavy_carrier_hull = 1
+
+		## Modules##
+		torpedo_tech_one = 1
+		torpedo_tech_two = 1
+		torpedo_tech_three = 1
+		gunnery_tech_one = 1
+		gunnery_tech_two = 1
+		gunnery_tech_three = 1
+		ss_torpedo_module_one = 1
+		ss_torpedo_module_two = 1
+		ss_utility_one = 1
+		dd_gun_module_one = 1
+		dd_gun_module_two = 1
+		dd_asw_module_one = 1
+		dd_asw_module_two = 1
+		dd_utility_module_one = 1
+		dd_utility_module_two = 1
+		dd_torpedo_module_one = 1
+		dd_torpedo_module_two = 1
+		cruiser_gun_module_one = 1
+		cruiser_gun_module_two = 1
+		cruiser_specialisation_module_one = 1
+		cruiser_specialisation_module_two = 1
+		ps_gun_module_one = 1
+		ps_gun_module_two = 1
+		ps_hull_module_one = 1
+		ps_hull_module_two = 1
+		fbb_gunnery_tech_one = 1
+		fbb_gunnery_tech_two = 1
+		fbb_gunnery_tech_three = 1
+		fbb_hull_module_one = 1
+		fbb_hull_module_two = 1
+		fbb_gun_module_one = 1
+		fbb_gun_module_two = 1
+		fbb_sh_gun_module_one = 1
+		fbb_sh_gun_module_two = 1
+		dn_gunnery_tech_one = 1
+		dn_gunnery_tech_two = 1
+		dn_gunnery_tech_three = 1
+		dn_hull_module_one = 1
+		dn_hull_module_two = 1
+		dn_sh_gun_module_one = 1
+		dn_sh_gun_module_two = 1
+		catapult_plane_two = 1
+		carrier_armoured_deck = 1
+		heavy_secondaries = 1
+		heavy_carrier_armoured_deck = 1
+		transport = 1
+	}
+}
+
+### Navy - Non MtG ###
+
+if = {
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull_nonmtg = 1
+		interwar_light_ship_hull_nonmtg = 1
+		improved_light_ship_hull_nonmtg = 1
+		weltkrieg_cruiser_hull_nonmtg = 1
+		interwar_cruiser_hull_nonmtg = 1
+		improved_cruiser_hull_nonmtg = 1
+		weltkrieg_submarine_hull_nonmtg = 1
+		interwar_submarine_hull_nonmtg = 1
+		improved_submarine_hull_nonmtg = 1
+		weltkrieg_carrier_hull_nonmtg = 1
+		interwar_carrier_hull_nonmtg = 1
+		weltkrieg_panzerschiff_hull_nonmtg = 1
+		interwar_panzerschiff_hull_nonmtg = 1
+		improved_panzerschiff_hull_nonmtg = 1
+		weltkrieg_fast_battleship_hull_nonmtg = 1
+		interwar_fast_battleship_hull_nonmtg = 1
+		improved_fast_battleship_hull_nonmtg = 1
+		weltkrieg_dreadnought_hull_nonmtg = 1
+		interwar_dreadnought_hull_nonmtg = 1
+		improved_dreadnought_hull_nonmtg = 1
+		interwar_heavy_carrier_hull_nonmtg = 1
+		transport = 1
+	}
+}
+
+add_opinion_modifier = { target = FRA modifier = embargo }
+add_opinion_modifier = { target = ENG modifier = embargo }
+add_opinion_modifier = { target = SRI modifier = embargo }
+add_opinion_modifier = { target = GEO modifier = embargo }
+
+country_event = { id = mittel.167 days = 1 } #Intro event
+country_event = { id = mittel.1 days = 5 }
+
+set_research_slots = 3
+set_convoys = 50
+set_stability = 0.55
+set_war_support = 0.10
+add_political_power = -200
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1888.15.6"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	radicalism = 12
+	socialism = 12
+	reformism = 12
+	liberalism = 12
+	conservatism = 12
+	authoritarianis = 12
+	despotism = 12
+	totalism = 16
+}
+
+set_country_flag = Franz_Ritter_von_Epp_dead
+set_country_flag = Fritz_Thyssen_dead
+
+add_ideas = {
+	MAF_Colonial_Nation
+	MAF_British_Settlers
+	MAF_Belgian_Investors
+	free_trade
+	MAF_Hermann_von_Goering_hog_pau
+	MAF_Arthur_Zimmermann_for_pau
+	MAF_August_Stauch_eco_ade
+	MAF_Hans_Albert_von_Lettow_Vorbeck_sec_pau
+}
+
+### Country Leaders ###
+create_country_leader = {
+	name = "Georg Kraut"
+	desc = "POLITICS_KRAUT_DESC"
+	picture = "Portrait_Mittelafrika_Georg_Kraut.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {}
+}
+create_country_leader = {
+	name = "Hermann von Göring"
+	desc = "POLITICS_GOERING_DESC"
+	picture = "Portrait_Mittelafrika_Hermann_Goering.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {}
+}
+create_country_leader = {
+	name = "Hermann von Göring"
+	desc = "POLITICS_GOERING_DESC"
+	picture = "Portrait_Mittelafrika_Hermann_Goering.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Theodor von Hassel"
+	desc = "POLITICS_HASSEL_DESC"
+	picture = "Portrait_Mittelafrika_Theodor_von_Hassel.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Jules Cousin"
+	desc = "POLITICS_COUSIN_DESC"
+	picture = "Portrait_Mittelafrika_Jules_Cousin.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Nigel Leaky"
+	desc = "POLITICS_LEAKY_DESC"
+	picture = "Portrait_Mittelafrika_Nigel_Leaky.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Albert von Göring"
+	desc = "POLITICS_EPSTEIN_DESC"
+	picture = "Portrait_Mittelafrika_Albert_Goering.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {}
+}
+
+### Field Marshals ###
+create_field_marshal = {
+	name = "Hermann von Göring"
+	picture = "Portrait_Mittelafrika_Hermann_Goering.tga"
+	traits = {
+		trait_reckless
+		politically_connected
+		media_personality
+		logistics_wizard
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 198
+}
+
+### Corps Commanders ###
+
+create_corps_commander = {
+	name = "Alexander Duala-Bell"
+	picture = "Portrait_Mittelafrika_Alexandre_Douala_Bell.tga"
+	traits = {
+		career_officer
+		war_hero
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Ernst Jünger"
+	picture = "Portrait_Mittelafrika_Ernst_Junger.tga"
+	traits = {
+		war_hero
+		infantry_officer
+		fortress_buster
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Theodor von Hippel"
+	picture = "Portrait_Mittelafrika_Theodor_von_Hippel.tga"
+	traits = {
+		brilliant_strategist
+		war_hero
+		trickster
+		commando
+		camouflage_expert
+		guerilla_fighter
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Sepp Dietrich"
+	picture = "Portrait_Mittelafrika_Sepp_Dietrich.tga"
+	traits = {
+		trait_reckless
+		media_personality
+		panzer_leader
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Theodor Eicke"
+	picture = "Portrait_Mittelafrika_Theodor_Eicke.tga"
+	traits = {
+		harsh_leader
+		armor_officer
+	}
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Ferdinand Schörner"
+	picture = "Portrait_Mittelafrika_Ferdinand_Schorner.tga"
+	traits = {
+		harsh_leader
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Hermann Detzner"
+	portrait_path = "gfx/leaders/MAF/Portrait_Mittelafrika_Hermann_Detzner.tga"
+	traits = {
+		war_hero
+		trait_engineer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+### Navy Commanders ###
+create_navy_leader = {
+	name = "Max von Looff"
+	picture = "Portrait_Mittelafrika_Max_Looff.tga"
+	traits = {
+		spotter
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Reinhard Heydrich"
+	picture = "Portrait_Mittelafrika_Reinhard_Heydrich.tga"
+	traits = {}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_country_leader = {
+	name = "Oskar_Dirlewanger"
+	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
+	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
+	expire = "1965.1.1"
+	ideology = socialism_subtype
+	traits = {}
+}

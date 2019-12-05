@@ -1,0 +1,172 @@
+﻿capital = 274
+OOB = "empty"
+set_research_slots = 2
+set_technology = {
+	### MOD ###
+	### INF ###
+	infantry_weapons = 1
+}
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1888.15.6"
+	election_frequency = 48
+	elections_allowed = no
+}
+add_ideas = {
+	war_economy
+	limited_exports
+}
+
+set_popularities = {
+	radicalism = 12
+	socialism = 12
+	reformism = 12
+	liberalism = 12
+	conservatism = 12
+	authoritarianis = 12
+	despotism = 12
+	totalism = 16
+}
+
+create_country_leader = {
+	name = "William Ofori Atta"
+	desc = "POLITICS_ATTA_OFORI_DESC"
+	picture = "Portrait_Ashanti_Ofori.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Prempeh II"
+	desc = "POLITICS_PREMPEH_DESC"
+	picture = "Portrait_Ashanti_Prempeh.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Komla Agbeli Gbedemah"
+	desc = "POLITICS_GBEDMAH_DESC"
+	picture = "Portrait_Ashanti_Gbedemah.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Edward Akufo-Addo"
+	desc = "POLITICS_AKUFOADDO_DESC"
+	picture = "Portrait_Ashanti_Addo.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Henley Coussey"
+	desc = "POLITICS_COUSSEY_GHA_DESC"
+	picture = "Portrait_Ashanti_Coussey.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Joseph Casley Hayford"
+	desc = "POLITICS_JOSEPH_CASEY_DESC"
+	picture = "Portrait_Ashanti_Casey.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {}
+}
+
+
+create_country_leader = {
+	name = "J. B. Danquah"
+	desc = "POLITICS_DANQUAH_DESC"
+	picture = "Portrait_Ashanti_Danquah.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Kofi Abrefa Busia"
+	desc = "POLITICS_BUSIA_DESC"
+	picture = "Portrait_Ashanti_Busia.tga"
+	expire = "1965.1.1"
+	ideology = radical_socialist_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Kwame Nkrumah"
+	desc = "POLITICS_KWAMA_NKRUMAH_DESC"
+	picture = "Portrait_Ashanti_Kwame.tga"
+	expire = "1965.1.1"
+	ideology = syndicalist_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Kojo Botsio"
+	desc = "POLITICS_KOJOBOTSIO_DESC"
+	picture = "Portrait_Ashanti_Kojo_Botsio.tga"
+	expire = "1965.1.1"
+	ideology = totalist_subtype
+	traits = {}
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Joseph Arthur Ankrah"
+	portrait_path = "gfx/leaders/GHA/Portrait_GHA_J_Ankrah.tga"
+	traits = {
+		harsh_leader
+		ranger
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Akwasi Afrifa"
+	portrait_path = "gfx/leaders/GHA/Portrait_GHA_Akwasi_Afrifa.tga"
+	traits = {
+		infantry_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "C.F. Adjetey"
+	portrait_path = "gfx/leaders/GHA/Portrait_GHA_CF_Adjetey.tga"
+	traits = {
+		old_guard
+		jungle_rat
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+
+create_country_leader = {
+	name = "Oskar_Dirlewanger"
+	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
+	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
+	expire = "1965.1.1"
+	ideology = socialism_subtype
+	traits = {}
+}

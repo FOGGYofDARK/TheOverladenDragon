@@ -1,0 +1,133 @@
+﻿capital = 553
+OOB = "empty"
+
+set_technology = {
+	### INF ###
+	infantry_weapons = 1
+}
+### Navy - MtG ###
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull = 1
+		basic_naval_mines = 1
+		interwar_light_ship_hull = 1
+		weltkrieg_cruiser_hull = 1
+		interwar_cruiser_hull = 1
+
+		## Modules##
+		gunnery_tech_one = 1
+		dd_gun_module_one = 1
+		dd_asw_module_one = 1
+		dd_utility_module_one = 1
+		dd_utility_module_one = 1
+		cruiser_gun_module_one = 1
+		cruiser_specialisation_module_one = 1
+	}
+}
+
+### Navy - Non MtG ###
+
+if = {
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull_nonmtg = 1
+		interwar_light_ship_hull_nonmtg = 1
+		weltkrieg_cruiser_hull_nonmtg = 1
+		interwar_cruiser_hull_nonmtg = 1
+	}
+}
+
+set_research_slots = 2
+set_politics = {
+	ruling_party = socialism
+	last_election = "1888.15.6"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	radicalism = 12
+	socialism = 12
+	reformism = 12
+	liberalism = 12
+	conservatism = 12
+	authoritarianis = 12
+	despotism = 12
+	totalism = 16
+}
+
+add_ideas = {
+	LEB_Habib_Basha_el_Saed_hog_ade
+	LEB_Majid_Arslane_for_sco
+	LEB_Nassim_Majdalany_eco_sco
+	LEB_Khaled_Chehab_sec_sli
+}
+
+### Field Marshal
+### Corps Commander
+create_corps_commander = { #Auto-Generated
+	name = "al-Hasic"
+	portrait_path = "gfx/leaders/LEB/Portrait_LEB_al_Hasic.tga"
+	traits = {}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Azzam"
+	portrait_path = "gfx/leaders/LEB/Portrait_LEB_Azzam.tga"
+	traits = {
+		commando
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Cazaud"
+	portrait_path = "gfx/leaders/LEB/Portrait_LEB_Cazaud.tga"
+	traits = {
+		infantry_officer
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Daher"
+	portrait_path = "gfx/leaders/LEB/Portrait_LEB_Daher.tga"
+	traits = {}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### Navy Leader
+
+create_country_leader = {
+	name = "Oskar_Dirlewanger"
+	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
+	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
+	expire = "1965.1.1"
+	ideology = socialism_subtype
+	traits = {}
+}

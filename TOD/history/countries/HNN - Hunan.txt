@@ -1,0 +1,68 @@
+﻿capital = 602
+
+oob = "empty"
+
+set_technology = {
+	### MOD ###
+	### Tanks ###
+	gwtank = 1
+	### INF ###
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	### AIR ###
+	early_fighter = 1
+	early_bomber = 1
+}
+
+add_opinion_modifier = { target = JAP modifier = embargo }
+add_opinion_modifier = { target = FNG modifier = embargo }
+
+set_research_slots = 3
+set_convoys = 10
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1888.15.6"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	radicalism = 12
+	socialism = 12
+	reformism = 12
+	liberalism = 12
+	conservatism = 12
+	authoritarianis = 12
+	despotism = 12
+	totalism = 16
+}
+
+create_country_leader = {
+	name = "Zhao Hengti"
+	desc = ""
+	picture = "Portrait_Hunan_Zhao_Hengti.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Zhang Jingyao"
+	desc = ""
+	picture = "Portrait_Hunan_Zhang_Jingyao.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Oskar_Dirlewanger"
+	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
+	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
+	expire = "1965.1.1"
+	ideology = socialism_subtype
+	traits = {}
+}
