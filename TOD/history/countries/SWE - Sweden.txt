@@ -1,0 +1,857 @@
+﻿capital = 141
+OOB = "SWE"
+set_naval_oob = "SWE_naval"
+
+SWE = {
+	country_event = { days = 2 id = swe.9999 }
+	country_event = { days = 365 id = swe.66 }
+	country_event = { days = 5412 id = swe.72 }
+	country_event = { days = 2219 id = swe.90 }
+	country_event = { days = 2219 id = swe.110 }
+	country_event = { days = 2565 id = swe.103 }
+	country_event = { days = 2565 id = swe.104 }
+	country_event = { days = 2565 id = swe.105 }
+	country_event = { days = 2565 id = swe.106 }
+	country_event = { days = 2565 id = swe.107 }
+	country_event = { days = 2565 id = swe.108 }
+}
+
+add_ideas = {
+	SWE_conservative_army_idea_1
+	SWE_statare_idea
+	SWE_political_instability_idea
+	limited_conscription
+	SWE_Goesta_Bagge_hog_sco
+	SWE_Christian_Guenther_for_sco
+	SWE_Gustav_Cassel_eco_mli
+	SWE_Carlos_Adlercreutz_sec_ade
+}
+
+set_technology = {
+
+	### MOD ###
+	### Tanks ###
+	gwtank = 1
+	### INF ###
+	infantry_weapons = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	tech_support = 1
+	### AIR ###
+	early_fighter = 1
+	cv_early_fighter = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+	cv_naval_bomber1 = 1
+	### Naval ###
+	
+	
+}
+
+### Navy - MtG ###
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull = 1
+		basic_naval_mines = 1
+		interwar_light_ship_hull = 1
+		improved_light_ship_hull = 1
+		weltkrieg_cruiser_hull = 1
+		interwar_cruiser_hull = 1
+		weltkrieg_submarine_hull = 1
+		submarine_mine_laying = 1
+		interwar_submarine_hull = 1
+		improved_submarine_hull = 1
+		weltkrieg_panzerschiff_hull = 1
+		interwar_panzerschiff_hull = 1
+		weltkrieg_dreadnought_hull = 1
+
+		## Modules##
+		torpedo_tech_one = 1
+		torpedo_tech_two = 1
+		gunnery_tech_one = 1
+		gunnery_tech_two = 1
+		ss_torpedo_module_one = 1
+		ss_torpedo_module_two = 1
+		ss_utility_one = 1
+		ss_utility_two = 1
+		dd_gun_module_one = 1
+		dd_gun_module_two = 1
+		dd_asw_module_one = 1
+		dd_utility_module_one = 1
+		dd_torpedo_module_one = 1
+		dd_torpedo_module_two = 1
+		cruiser_gun_module_one = 1
+		cruiser_gun_module_two = 1
+		cruiser_specialisation_module_one = 1
+		cruiser_specialisation_module_two = 1
+		ps_gun_module_one = 1
+		ps_gun_module_two = 1
+		ps_hull_module_one = 1
+		ps_hull_module_two = 1
+		fbb_gunnery_tech_one = 1
+		dn_gunnery_tech_one = 1
+		dn_hull_module_one = 1
+	}
+}
+
+### Navy - Non MtG ###
+if = {
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_technology = {
+		weltkrieg_light_ship_hull_nonmtg = 1
+		interwar_light_ship_hull_nonmtg = 1
+		improved_light_ship_hull_nonmtg = 1
+		weltkrieg_cruiser_hull_nonmtg = 1
+		interwar_cruiser_hull_nonmtg = 1
+		weltkrieg_submarine_hull_nonmtg = 1
+		interwar_submarine_hull_nonmtg = 1
+		improved_submarine_hull_nonmtg = 1
+		weltkrieg_panzerschiff_hull_nonmtg = 1
+		interwar_panzerschiff_hull_nonmtg = 1
+		weltkrieg_dreadnought_hull_nonmtg = 1
+	}
+}
+
+set_research_slots = 3
+set_convoys = 75
+
+set_war_support = 0.2
+
+set_politics = {
+	ruling_party = socialism
+	last_election = "1888.15.6"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	radicalism = 12
+	socialism = 12
+	reformism = 12
+	liberalism = 12
+	conservatism = 12
+	authoritarianis = 12
+	despotism = 12
+	totalism = 16
+}
+
+create_country_leader = {
+	name = "Gustaf V"
+	desc = "POLITICS_Gustaf_V_DESC"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Gustaf V"
+	desc = "POLITICS_Gustaf_V_DESC"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Gustaf V"
+	desc = "POLITICS_Gustaf_V_DESC"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
+	expire = "1965.1.1"
+	ideology = social_democrat_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "The Revolutionary Committee"
+	desc = "POLITICS_REVOLUTIONARY_COMMITTEE_DESC"
+	picture = "Portrait_Sweden_Revolutionary_Committee.tga"
+	expire = "1965.1.1"
+	ideology = syndicalist_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Gustaf V"
+	desc = "POLITICS_Gustaf_V_DESC"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Gustaf V"
+	desc = "POLITICS_Gustaf_V_DESC"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "The Revolutionary Committee"
+	desc = "POLITICS_REVOLUTIONARY_COMMITTEE_DESC"
+	picture = "Portrait_Sweden_Revolutionary_Committee.tga"
+	expire = "1965.1.1"
+	ideology = radical_socialist_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Gustaf V"
+	desc = "POLITICS_Gustaf_V_DESC"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Gustaf V"
+	desc = "POLITICS_Gustaf_V_DESC"
+	picture = "Portrait_Sweden_Gustaf_V.tga"
+	expire = "1965.1.1"
+	ideology = social_liberal_subtype
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "The Revolutionary Committee"
+	desc = "POLITICS_REVOLUTIONARY_COMMITTEE_DESC"
+	picture = "Portrait_Sweden_Revolutionary_Committee.tga"
+	expire = "1965.1.1"
+	ideology = totalist_subtype
+	traits = {
+
+	}
+}
+
+
+### Field Marshal
+
+create_field_marshal = {
+	name = "Olof Thörnell"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Olof_Thornell.tga"
+	traits = {
+		harsh_leader
+		career_officer
+		defensive_doctrine
+		winter_specialist
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+	id = 1001
+}
+
+create_field_marshal = {
+	name = "Oscar Nygren"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Oscar_Nygren.tga"
+	traits = {
+		old_guard
+		organisational_leader
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+	id = 1002
+}
+
+### Corps Commander
+
+create_corps_commander = {
+	name = "Archibald Douglas"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Archibald_Douglas.tga"
+	traits = {
+		cavalry_officer
+		cavalry_leader
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 2
+	id = 1003
+}
+
+create_corps_commander = {
+	name = "Erik af Edholm"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Erik_Edholm.tga"
+	traits = {
+		infantry_officer
+		hill_fighter
+	}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 4
+	logistics_skill = 4
+	id = 1004
+}
+
+create_corps_commander = {
+	name = "Ernst Linder"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Ernst_Linder.tga"
+	traits = {
+		trickster
+		winter_specialist
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 1005
+}
+
+create_corps_commander = {
+	name = "Folke Bernadotte"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Folke_Bernadotte_Army.tga"
+	traits = {
+		politically_connected
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 1006
+}
+
+create_corps_commander = {
+	name = "Harald Malmberg"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Harald_Malmberg.tga"
+	traits = {
+		trait_reckless
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 1007
+}
+
+create_corps_commander = {
+	name = "Helge Jung"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Helge_Jung.tga"
+	traits = {
+		career_officer
+		infantry_leader
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+	id = 1008
+}
+
+#create_corps_commander = {
+#	name = "Martin Ekström"
+#	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Martin_Ekstrom.tga"
+#	traits = {
+#		harsh_leader
+#		commando
+#		ranger
+#	}
+#	skill = 3
+#	attack_skill = 3
+#	defense_skill = 2
+#	planning_skill = 3
+#	logistics_skill = 2
+#	id = 1009
+#}
+
+create_corps_commander = {
+	name = "Gustaf Adolf of Sweden"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.tga"
+	traits = {
+		politically_connected
+		cavalry_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 1010
+}
+
+create_corps_commander = {
+	name = "Gilbert Hamilton"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Gilbert_Hamilton.tga"
+	traits = {
+		cavalry_officer
+		trickster
+		winter_specialist
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+	id = 1011
+}
+
+create_corps_commander = {
+	name = "Ivar Holmquist"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Ivar_Holmquist.tga"
+	traits = {
+		commando
+		politically_connected
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+	id = 1012
+}
+
+create_corps_commander = {
+	name = "Carl Gustaf Hammarskjöld"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Carl_Hammarskjold.tga"
+	traits = {
+		old_guard
+		organizer
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 1
+	id = 1013
+}
+
+create_corps_commander = {
+	name = "Ernst af Klercker"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Ernst_Klercker.tga"
+	traits = {
+		old_guard
+		career_officer
+		infantry_leader
+	}
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+	id = 1014
+}
+
+create_corps_commander = {
+	name = "Ivar Backlund"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Ivar_Backlund.tga"
+	traits = {
+		trait_cautious
+		trait_engineer
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+	id = 1015
+}
+
+create_corps_commander = {
+	name = "Nils Björk"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Nils_Bjork.tga"
+	traits = { }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+	id = 1016
+}
+
+create_corps_commander = {
+	name = "Henry Peyron"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Henry_Peyron.tga"
+	traits = {
+		career_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+	id = 1017
+}
+
+### Navy Leader
+create_navy_leader = {
+	name = "Erik Anderberg"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Erik_Anderberg.tga"
+	traits = {
+		spotter
+		fly_swatter
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+	id = 1018
+}
+
+create_navy_leader = {
+	name = "Fabian Tamm"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Fabian_Tamm.tga"
+	traits = {
+		superior_tactician
+		blockade_runner
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 3
+	id = 1019
+}
+
+create_navy_leader = {
+	name = "Otto Lybeck"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Otto_Lybeck.tga"
+	traits = {
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+	id = 1020
+}
+
+create_navy_leader = {
+	name = "Bertil of Sweden"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Prince_Bertil.tga"
+	traits = {
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 1
+	id = 1021
+}
+
+create_navy_leader = {
+	name = "Charles de Champs"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Charles_Champs.tga"
+	traits = {
+		ironside
+		old_guard_navy
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 3
+	coordination_skill = 1
+	id = 1022
+}
+
+create_navy_leader = {
+	name = "Claës Lindsström"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Claes_Lindsstrom.tga"
+	traits = {
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+	id = 1023
+}
+
+create_navy_leader = {
+	name = "Gunnar Bjurner"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Gunnar_Bjurner.tga"
+	traits = {
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 3
+	maneuvering_skill = 1
+	coordination_skill = 1
+	id = 1024
+}
+
+create_navy_leader = {
+	name = "Gösta Ehrensvärd"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Gosta_Ehrensvard.tga"
+	traits = {
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	maneuvering_skill = 2
+	coordination_skill = 2
+	id = 1025
+}
+
+create_navy_leader = {
+	name = "Harald Åkermark"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Harald_Akermark.tga"
+	traits = {
+	}
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+	id = 1026
+}
+
+create_navy_leader = {
+	name = "Jens Stefenson"
+	portrait_path = "gfx/leaders/SWE/Portrait_Sweden_Jens_Stefenson.tga"
+	traits = {
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 1
+	id = 1027
+}
+### Ship Variants ###
+create_equipment_variant = {
+	name = "Oden Class"
+	type = ship_hull_dreadnought_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_super_heavy_battery_0
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_shbb
+		mid_1_custom_slot = ship_super_heavy_battery_0
+		rear_1_custom_slot = ship_super_heavy_battery_0
+	}
+}
+
+create_equipment_variant = {
+	name = "Äran Class"
+	type = ship_hull_dreadnought_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_super_heavy_battery_0
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_shbb
+		mid_1_custom_slot = ship_super_heavy_battery_0
+		rear_1_custom_slot = ship_super_heavy_battery_0
+	}
+}
+
+create_equipment_variant = {
+	name = "Oscar II Class"
+	type = ship_hull_dreadnought_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_super_heavy_battery_0
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_shbb
+		mid_1_custom_slot = ship_super_heavy_battery_0
+		rear_1_custom_slot = ship_super_heavy_battery_0
+	}
+}
+
+create_equipment_variant = {
+	name = "Dristigheten Class"
+	type = ship_hull_carrier_1
+	parent_version = 0
+	modules = {
+		fixed_ship_deck_slot_1 = ship_deck_space_10
+		fixed_ship_deck_slot_2 = ship_deck_space_10
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = carrier_ship_engine_1
+		fixed_ship_secondaries_slot = empty
+	}
+}
+
+create_equipment_variant = {
+	name = "Gotland Class"
+	type = ship_hull_cruiser_3
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		rear_1_custom_slot = ship_airplane_launcher_2
+		mid_1_custom_slot = ship_airplane_launcher_2
+		hull_specialization_slot = plane_manipulation_space
+	}
+}
+
+create_equipment_variant = {
+	name = "Fylgia Class"
+	type = ship_hull_panzerschiff_1
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_medium_battery_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = cruiser_ship_engine_1
+		fixed_ship_secondaries_slot = empty
+		fixed_ship_armor_slot = ship_armor_cruiser_1
+		rear_1_custom_slot = ship_light_medium_battery_1
+	}
+}
+
+create_equipment_variant = {
+	name = "Wale Class"
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Wrangel Class"
+	type = ship_hull_light_1
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Ehrensköld Class"
+	type = ship_hull_light_3
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_light_battery_2
+		mid_1_custom_slot = ship_depth_charge_1
+
+	}
+}
+
+create_equipment_variant = {
+	name = "Klas Horn Class"
+	type = ship_hull_light_3
+	parent_version = 0
+	modules = {		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_light_battery_2
+		mid_1_custom_slot = ship_depth_charge_1
+
+	}
+}
+
+create_equipment_variant = {
+	name = "Hajen Class"
+	type = ship_hull_submarine_2
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_0
+		fixed_ship_engine_slot = sub_ship_engine_1
+		rear_1_custom_slot = ship_torpedo_sub_0
+
+	}
+	obsolete = yes
+}
+
+create_equipment_variant = {
+	name = "Bävern Class"
+	type = ship_hull_submarine_3
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_2
+		rear_1_custom_slot = ship_torpedo_sub_1
+		mid_1_custom_slot = ship_sonar_1
+
+	}
+}
+
+create_equipment_variant = {
+	name = "Draken Class"
+	type = ship_hull_submarine_3
+	parent_version = 0
+	modules = {		fixed_ship_torpedo_slot = ship_torpedo_sub_1
+		fixed_ship_engine_slot = sub_ship_engine_2
+		rear_1_custom_slot = ship_torpedo_sub_1
+		mid_1_custom_slot = ship_sonar_1
+
+	}
+}
+
+create_equipment_variant = {
+	name = "Svealand Class"
+	type = ship_hull_panzerschiff_3
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_medium_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+		fixed_ship_engine_slot = cruiser_ship_engine_2
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_cruiser_2
+		rear_1_custom_slot = ship_medium_battery_1
+		mid_1_custom_slot = ship_anti_air_1
+	}
+}
+
+create_country_leader = {
+	name = "Oskar_Dirlewanger"
+	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
+	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
+	expire = "1965.1.1"
+	ideology = socialism_subtype
+	traits = {}
+}

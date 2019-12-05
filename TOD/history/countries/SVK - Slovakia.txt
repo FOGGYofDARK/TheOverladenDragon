@@ -1,0 +1,134 @@
+﻿capital = 70
+OOB = "empty"
+
+set_technology = {
+	### MOD ###
+	### INF ###
+	infantry_weapons = 1
+}
+
+set_research_slots = 3
+set_politics = {
+	ruling_party = socialism
+	last_election = "1888.15.6"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	radicalism = 12
+	socialism = 12
+	reformism = 12
+	liberalism = 12
+	conservatism = 12
+	authoritarianis = 12
+	despotism = 12
+	totalism = 16
+}
+
+### Field Marshal
+create_field_marshal = { #Auto-Generated
+	name = "Ferdinand Čatloš"
+	portrait_path = "gfx/leaders/SLO/Portrait_SLO_Catlos.tga"
+	traits = {
+		infantry_officer
+		logistics_wizard
+	}
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+### Corps Commander
+create_corps_commander = { #Auto-Generated
+	name = "Ján Golian"
+	portrait_path = "gfx/leaders/SLO/Portrait_SLO_Golian.tga"
+	traits = {
+		trickster
+		trait_mountaineer
+	}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Stefan Jurech"
+	portrait_path = "gfx/leaders/SLO/Portrait_SLO_Jurech.tga"
+	traits = {
+		armor_officer
+		trait_reckless
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Augustín Malár"
+	portrait_path = "gfx/leaders/SLO/Portrait_SLO_Malar.tga"
+	traits = {
+		trait_cautious
+	}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Josef Šnejdárek"
+	portrait_path = "gfx/leaders/SLO/Portrait_SLO_Snejdarek.tga"
+	traits = {
+		old_guard
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Mikuláš Ferjenčík"
+	portrait_path = "gfx/leaders/SLO/Portrait_SLO_Ferjencik.tga"
+	traits = {
+		ranger
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = { #Auto-Generated
+	name = "Viliam Zingor"
+	portrait_path = "gfx/leaders/SLO/Portrait_SLO_Zingor.tga"
+	traits = {
+		winter_specialist
+		trickster
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+### Navy Leader
+create_country_leader = {
+	name = "Oskar_Dirlewanger"
+	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
+	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
+	expire = "1965.1.1"
+	ideology = socialism_subtype
+	traits = {}
+}
