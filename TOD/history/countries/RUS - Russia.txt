@@ -153,52 +153,27 @@ set_stability = 0.3
 set_war_support = 0.15
 
 set_politics = {
-	ruling_party = social_liberal
+	ruling_party = authoritarianism
 	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-    totalist = 1
-    radical_socialist = 2
-    syndicalist = 3
-    social_democrat = 5
-    social_liberal = 20
-    market_liberal = 6
-    social_conservative = 8
-    authoritarian_democrat = 10
-    paternal_autocrat = 13
-    national_populist = 32
+    radicalism = 9
+	socialism = 2
+	reformism = 22
+	liberalism = 3
+	conservatism = 25
+	authoritarianism = 21
+	despotism = 3
+	totalism = 15
 }
 
 set_autonomy = {
 	target = ALO
 	autonomous_state = kr_default_puppet
 	freedom_level = 0.75
-}
-
-#### Fix for totalist alash orda
-ALO = {
-	set_politics = {
-		ruling_party = authoritarian_democrat
-		last_election = "1930.11.9"
-		election_frequency = 48
-		elections_allowed = no
-}
-
-    set_popularities = {
-        totalist = 0
-        radical_socialist = 0
-        syndicalist = 2
-        social_democrat = 4
-        social_liberal = 6
-        market_liberal = 8
-        social_conservative = 12
-        authoritarian_democrat = 41
-        paternal_autocrat = 19
-        national_populist = 8
-    }
 }
 
 add_ideas = {
@@ -212,8 +187,10 @@ create_country_leader = {
 	desc = "POLITICS_TSAR_Mikhail_IV_DESC"
 	picture = "Portrait_Russia_Michael_Romanov.tga"
 	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {}
+	ideology = authoritarianism_subtype
+	traits = {
+		The_emperor_of_Russia
+	}
 }
 
 #create_country_leader = {

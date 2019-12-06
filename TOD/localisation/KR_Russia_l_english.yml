@@ -1,7 +1,7 @@
 ﻿l_english:
 
 ### Political ###
-RUS_tsar_mikhail:0 "米哈伊尔四世沙皇"
+RUS_tsar_mikhail:0 "反对内阁的沙皇"
 RUS_tsar_mikhail_desc:0 "尽管已经被反对君主制的内阁完全架空，米哈伊尔沙皇还是经常对政府提出无效的抗议。"
 RUS_highly_autonomous_ukrine:0 "高度自治的乌克兰地区"
 RUS_highly_autonomous_ukrine_desc:0 "自1932年的乌克兰饥荒以来，乌克兰地区已经陷入了高度混乱状态，政府迫于无奈只得给予乌克兰高度自治权，并且每年给乌克兰巨额的财政补贴。"
@@ -10,6 +10,24 @@ RUS_disordered_army_desc:0 "君主立宪制的实施和持续的经济下降使�
 
 ### Country Leaders ###
 POLITICS_TSAR_Mikhail_IV_DESC:0 "米哈伊尔·亚历山德罗维奇是亚历山大二世的小儿子，前任沙皇尼古拉二世的弟弟，虔诚的东正教徒。1926年俄波战争结束后，尼古拉二世在全国的反对声中退位，把皇位传给了他。彼时腐败混乱的俄国杜马用了半年时间才正式通过了新皇即位的决议，米哈伊尔在即位前承诺的全民选举也未能举行，只在国民苏维埃中举办了一场象征性的投票草草了事。种种事件无不暗示着这位沙皇悲惨的命运。\n命运仿佛向他开了个玩笑，他即位初期俄罗斯享受了战后久违的经济繁荣，然而这只能保证俄罗斯能还上去年欠下的贷款而已。科尔尼洛夫事件让他不得不接受君主立宪制，并开始失去对军队的控制；三十年代的经济大衰退与随之而来的法国撤资，使得他的精神伴随着俄罗斯的经济状况一起跌入了深渊；而随着1932年反对君主制的社会革命党胜选，将军与政客们或是与风头正盛的社会革命党各派系暗中接触，或是对这一切保持沉默。彻底失去对国家控制的沙皇变得越来越深居简出，每天只与几个内阁和教会中的人共度，好似在谋划着什么，好在社会革命党因为其他党派的掣肘没能将他废黜。时间进入了1936年，俄罗斯混乱的大选将再一次举行，这位孤独的沙皇将何去何从呢……\n\n"
+
+### Parties ###
+RUS_radicalism_party:0 "社会革命党（最高纲领派）"
+RUS_radicalism_party_long:0 "社会革命党（最高纲领派）"
+RUS_socialism_party:0 "社会革命党（最高纲领派）"
+RUS_socialism_party_long:0 "社会革命党（最高纲领派）"
+RUS_reformism_party:0 "社会民主党"
+RUS_reformism_party_long:0 "社会民主党"
+RUS_liberalism_party:0 "社会革命党（自由主义）"
+RUS_liberalism_party_long:0 "社会革命党（自由主义）"
+RUS_conservatism_party:0 "人民自由党"
+RUS_conservatism_party_long:0 "人民自由党"
+RUS_authoritarianism_party:0 "社会革命党"
+RUS_authoritarianism_party_long:0 "社会革命党"
+RUS_despotism_party:0 "君主派"
+RUS_despotism_party_long:0 "君主派"
+RUS_totalism_party:0 "人民社会党"
+RUS_totalism_party_long:0 "人民社会党"
 
 ### National Focuses ###
 RUS_FOCUS_001:0 "山雨欲来"
