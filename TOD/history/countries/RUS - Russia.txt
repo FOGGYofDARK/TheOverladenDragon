@@ -1,4 +1,4 @@
-﻿capital = 195
+capital = 195
 
 oob = "RUS"
 set_naval_oob = "RUS_naval"
@@ -153,21 +153,23 @@ set_stability = 0.3
 set_war_support = 0.15
 
 set_politics = {
-	ruling_party = socialism
-	last_election = "1888.15.6"
+	ruling_party = social_liberal
+	last_election = "1930.11.9"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	radicalism = 12
-	socialism = 12
-	reformism = 12
-	liberalism = 12
-	conservatism = 12
-	authoritarianism = 12
-	despotism = 12
-	totalism = 16
+    totalist = 1
+    radical_socialist = 2
+    syndicalist = 3
+    social_democrat = 5
+    social_liberal = 20
+    market_liberal = 6
+    social_conservative = 8
+    authoritarian_democrat = 10
+    paternal_autocrat = 13
+    national_populist = 32
 }
 
 set_autonomy = {
@@ -200,23 +202,28 @@ ALO = {
 }
 
 add_ideas = {
-	soviet_worker_soldier
-	rus_divided_staff
-	rus_divided_marine
-	RUS_Pavel_N_Milyukov_hog_mli
-	RUS_Pyetr_B_Struve_for_sli
-	RUS_Nikolay_A_Maklakov_eco_pau
-	RUS_Andrey_I_Shingarev_sec_mli
+	RUS_tsar_mikhail
+	RUS_highly_autonomous_ukrine
+	RUS_disordered_army
 }
 
 create_country_leader = {
-	name = "Aleksandr Kerenskiy"
-	desc = "POLITICS_ALEXANDER_KERENSKY_DESC"
-	picture = "Portrait_Soviet_Alexander_Kerensky.tga"
+	name = "Tsar Mikhail IV"
+	desc = "POLITICS_TSAR_Mikhail_IV_DESC"
+	picture = "Portrait_Russia_Michael_Romanov.tga"
 	expire = "1965.1.1"
 	ideology = social_liberal_subtype
 	traits = {}
 }
+
+#create_country_leader = {
+#	name = "Aleksandr Kerenskiy"
+#	desc = "POLITICS_ALEXANDER_KERENSKY_DESC"
+#	picture = "Portrait_Soviet_Alexander_Kerensky.tga"
+#	expire = "1965.1.1"
+#	ideology = social_liberal_subtype
+#	traits = {}
+#}
 
 create_country_leader = {
 	name = "Vyacheslav Molotov"
@@ -1330,13 +1337,4 @@ create_equipment_variant = {
 		front_1_custom_slot = ship_torpedo_sub_2
 
 	}
-}
-
-create_country_leader = {
-	name = "Oskar_Dirlewanger"
-	desc = "POLITICS_OSKAR_DIRLEWANGER_DESC"
-	picture = "Portrait_Orsk_Oskar_Dirlewanger.dds"
-	expire = "1965.1.1"
-	ideology = socialism_subtype
-	traits = {}
 }

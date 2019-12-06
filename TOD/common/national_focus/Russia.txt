@@ -1,0 +1,806 @@
+#TOD俄罗斯国策树
+#made by hoohooer
+focus_tree={
+	id=russian_focus
+	
+	country={	
+		factor=0
+		
+		modifier={
+			add=10
+			tag=RUS
+		}
+	}
+	default=no
+
+	
+
+
+	#政治线
+	focus={
+		id=RUS_FOCUS_001#山雨欲来
+		x=9
+		y=0
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_002#会见全俄大牧首
+		prerequisite={focus=RUS_FOCUS_001}
+		x=9
+		y=1
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_003#第三届杜马选举
+		prerequisite={focus=RUS_FOCUS_002}
+		x=9
+		y=2
+		cost=10
+	}
+	
+	focus={
+		id=RUS_FOCUS_004#人民自由党胜选
+		prerequisite={focus=RUS_FOCUS_003}
+		mutually_exclusive={focus=RUS_FOCUS_005  focus=RUS_FOCUS_006}
+		x=1
+		y=3
+		cost=0
+	}
+	
+	focus={
+		id=RUS_FOCUS_005#社会民主党胜选
+		prerequisite={focus=RUS_FOCUS_003}
+		mutually_exclusive={focus=RUS_FOCUS_004  focus=RUS_FOCUS_006}
+		x=7
+		y=3
+		cost=0
+	}
+	
+	focus={
+		id=RUS_FOCUS_006#社会革命党连任
+		prerequisite={focus=RUS_FOCUS_003}
+		mutually_exclusive={focus=RUS_FOCUS_004  focus=RUS_FOCUS_005}
+		x=11
+		y=3
+		cost=0
+	}
+	
+	focus={
+		id=RUS_FOCUS_007#最后的妥协……
+		prerequisite={focus=RUS_FOCUS_003}
+		x=15
+		y=3
+		cost=0
+	}
+	
+	#以下为米留科夫的人民自由党执政
+	focus={
+		id=RUS_FOCUS_008#沙皇的演讲
+		prerequisite={focus=RUS_FOCUS_004}
+		x=1
+		y=4
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_009#修订宪法
+		prerequisite={focus=RUS_FOCUS_008}
+		x=1
+		y=5
+		cost=5
+	}
+	
+	#10、12-18为人民自由党继续执政
+	focus={
+		id=RUS_FOCUS_010#平稳过渡
+		prerequisite={focus=RUS_FOCUS_009}
+		x=-1
+		y=6
+		cost=5
+	}
+	
+	#11、19-25为沙皇亲政
+	focus={
+		id=RUS_FOCUS_011#沙皇亲政
+		prerequisite={focus=RUS_FOCUS_009}
+		x=3
+		y=6
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_012#彼得格勒资本集团
+		prerequisite={focus=RUS_FOCUS_010}
+		x=-2
+		y=7
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_013#民主思想
+		prerequisite={focus=RUS_FOCUS_012}
+		x=-2
+		y=8
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_014#鼓励私有财产
+		prerequisite={focus=RUS_FOCUS_013}
+		x=-2
+		y=9
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_015#宽容统治
+		prerequisite={focus=RUS_FOCUS_010}
+		x=0
+		y=7
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_016#俄罗斯广播公司
+		prerequisite={focus=RUS_FOCUS_015}
+		x=0
+		y=8
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_017#国家的军队
+		prerequisite={focus=RUS_FOCUS_016}
+		x=0
+		y=9
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_018#自由之地
+		prerequisite={focus=RUS_FOCUS_014}
+		prerequisite={focus=RUS_FOCUS_017}
+		x=-1
+		y=10
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_019#强化教会权力
+		prerequisite={focus=RUS_FOCUS_011}
+		x=2
+		y=7
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_020#改写宪法
+		prerequisite={focus=RUS_FOCUS_019}
+		x=2
+		y=8
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_021#大斯拉夫主义
+		prerequisite={focus=RUS_FOCUS_020}
+		x=2
+		y=9
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_022#补贴民族资本家
+		prerequisite={focus=RUS_FOCUS_011}
+		x=4
+		y=7
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_023#忠君教育
+		prerequisite={focus=RUS_FOCUS_022}
+		x=4
+		y=8
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_024#战争工业
+		prerequisite={focus=RUS_FOCUS_023}
+		x=4
+		y=9
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_025#俄罗斯的荣耀
+		prerequisite={focus=RUS_FOCUS_021}
+		prerequisite={focus=RUS_FOCUS_024}
+		x=3
+		y=10
+		cost=5
+	}
+	
+	#以下为马尔托夫的社会民主党执政
+	focus={
+		id=RUS_FOCUS_026#处理左翼激进分子
+		prerequisite={focus=RUS_FOCUS_005}
+		x=7
+		y=4
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_027#沙皇退位
+		prerequisite={focus=RUS_FOCUS_026}
+		x=7
+		y=5
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_028#坚持议会斗争
+		prerequisite={focus=RUS_FOCUS_027}
+		x=7
+		y=6
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_029#与资本家谈判
+		prerequisite={focus=RUS_FOCUS_028}
+		x=6
+		y=7
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_030#工人代表（工人进议会）
+		prerequisite={focus=RUS_FOCUS_029}
+		x=6
+		y=8
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_031#保障工农权益
+		prerequisite={focus=RUS_FOCUS_030}
+		x=6
+		y=9
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_032#平等国度
+		prerequisite={focus=RUS_FOCUS_028}
+		x=8
+		y=7
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_033#普及义务教育
+		prerequisite={focus=RUS_FOCUS_032}
+		x=8
+		y=8
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_034#建立民兵武装
+		prerequisite={focus=RUS_FOCUS_033}
+		x=8
+		y=9
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_035#民主的社会主义
+		prerequisite={focus=RUS_FOCUS_031}
+		prerequisite={focus=RUS_FOCUS_034}
+		x=7
+		y=10
+		cost=5
+	}
+	#以下为切尔诺夫的社会革命党执政
+	focus={
+		id=RUS_FOCUS_036#清算反对党
+		prerequisite={focus=RUS_FOCUS_006}
+		x=11
+		y=4
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_037#清算党内反对派
+		prerequisite={focus=RUS_FOCUS_036}
+		x=11
+		y=5
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_038#权力归于首相
+		prerequisite={focus=RUS_FOCUS_037}
+		x=11
+		y=6
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_039#改组教会
+		prerequisite={focus=RUS_FOCUS_038}
+		x=10
+		y=7
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_040#世俗化教育
+		prerequisite={focus=RUS_FOCUS_039}
+		x=10
+		y=8
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_041#农业革命
+		prerequisite={focus=RUS_FOCUS_038}
+		x=12
+		y=7
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_042#建立民兵武装
+		prerequisite={focus=RUS_FOCUS_041}
+		x=12
+		y=8
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_043#确保绝对多数
+		prerequisite={focus=RUS_FOCUS_040}
+		prerequisite={focus=RUS_FOCUS_042}
+		x=11
+		y=9
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_044#清算沙皇
+		prerequisite={focus=RUS_FOCUS_043}
+		x=11
+		y=10
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_045#稳定而强盛
+		prerequisite={focus=RUS_FOCUS_044}
+		x=11
+		y=11
+		cost=5
+	}
+	#以下为克伦斯基执政
+	focus={
+		id=RUS_FOCUS_046#以让步换援助
+		prerequisite={focus=RUS_FOCUS_007}
+		x=15
+		y=4
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_047#争取人民支持
+		prerequisite={focus=RUS_FOCUS_046}
+		x=15
+		y=5
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_048#去中心化教育
+		prerequisite={focus=RUS_FOCUS_047}
+		x=15
+		y=6
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_049#准备建立自治共和国
+		prerequisite={focus=RUS_FOCUS_048}
+		x=15
+		y=7
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_050#远东的哥萨克人
+		prerequisite={focus=RUS_FOCUS_049}
+		x=14
+		y=8
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_051#西伯利亚自治共和国
+		prerequisite={focus=RUS_FOCUS_049}
+		x=16
+		y=8
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_052#北高加索
+		prerequisite={focus=RUS_FOCUS_050}
+		prerequisite={focus=RUS_FOCUS_051}
+		x=15
+		y=9
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_053#乌克兰与鲁塞尼亚
+		prerequisite={focus=RUS_FOCUS_052}
+		x=15
+		y=10
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_054#自食其力
+		prerequisite={focus=RUS_FOCUS_053}
+		x=15
+		y=11
+		cost=5
+	}
+	
+	#以下为图哈切夫斯基的人民革命党执政
+	focus={
+		id=RUS_FOCUS_055#进军彼得格勒，需要图哈切夫斯基上台
+		prerequisite={}
+		x=20
+		y=0
+		cost=0
+	}
+	
+	focus={
+		id=RUS_FOCUS_056#图哈切夫斯基元首
+		prerequisite={focus=RUS_FOCUS_055}
+		x=20
+		y=1
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_057#改造国家陆军
+		prerequisite={focus=RUS_FOCUS_056}
+		x=20
+		y=2
+		cost=10
+	}
+	
+	focus={
+		id=RUS_FOCUS_058#终结君主制
+		prerequisite={focus=RUS_FOCUS_057}
+		x=18
+		y=3
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_059#清除民主思想
+		prerequisite={focus=RUS_FOCUS_058}
+		x=18
+		y=4
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_060#领袖原则教育
+		prerequisite={focus=RUS_FOCUS_059}
+		x=18
+		y=5
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_061#设立国家宗教局
+		prerequisite={focus=RUS_FOCUS_060}
+		x=18
+		y=6
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_062#允许农民购买土地
+		prerequisite={focus=RUS_FOCUS_057}
+		x=20
+		y=3
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_063#发展军工产业
+		prerequisite={focus=RUS_FOCUS_062}
+		x=20
+		y=4
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_064#强制国有化
+		prerequisite={focus=RUS_FOCUS_063}
+		x=20
+		y=5
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_065#全面经济改革
+		prerequisite={focus=RUS_FOCUS_064}
+		x=20
+		y=6
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_066#改造国家海军
+		prerequisite={focus=RUS_FOCUS_057}
+		x=22
+		y=3
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_067#组建人民战斗队
+		prerequisite={focus=RUS_FOCUS_066}
+		x=22
+		y=4
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_068#战斗同盟扩大化
+		prerequisite={focus=RUS_FOCUS_067}
+		mutually_exclusive={focus=RUS_FOCUS_070}
+		x=22
+		y=5
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_069#组建青年团
+		prerequisite={focus=RUS_FOCUS_068}
+		x=22
+		y=6
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_070#军队精英化
+		prerequisite={focus=RUS_FOCUS_067}
+		mutually_exclusive={focus=RUS_FOCUS_068}
+		x=24
+		y=5
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_071#正规军至上
+		prerequisite={focus=RUS_FOCUS_070}
+		x=24
+		y=6
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_072#驱逐非斯拉夫族裔
+		prerequisite={focus=RUS_FOCUS_061}
+		prerequisite={focus=RUS_FOCUS_065}
+		prerequisite={focus=RUS_FOCUS_069 focus=RUS_FOCUS_071}
+		x=20
+		y=7
+		cost=10
+	}
+	
+	focus={
+		id=RUS_FOCUS_073#复仇主义
+		prerequisite={focus=RUS_FOCUS_072}
+		x=20
+		y=8
+		cost=5
+	}
+	
+	#以下为日丹诺夫的革命共产党执政
+	focus={
+		id=RUS_FOCUS_074#不可能的胜利，要求日丹诺夫上台
+		prerequisite={}
+		x=28
+		y=0
+		cost=0
+	}
+	
+	focus={
+		id=RUS_FOCUS_075#宣布全国戒严
+		prerequisite={focus=RUS_FOCUS_074}
+		x=28
+		y=1
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_076#成立“GPU”
+		prerequisite={focus=RUS_FOCUS_075}
+		x=28
+		y=2
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_077#开展全俄肃反运动
+		prerequisite={focus=RUS_FOCUS_076}
+		x=28
+		y=3
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_078#资本家可恶
+		prerequisite={focus=RUS_FOCUS_077}
+		x=27
+		y=4
+		cost=10
+	}
+	
+	focus={
+		id=RUS_FOCUS_079#首恶必办
+		prerequisite={focus=RUS_FOCUS_078}
+		x=27
+		y=5
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_080#取缔战斗同盟
+		prerequisite={focus=RUS_FOCUS_079}
+		x=27
+		y=6
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_081#民族社会主义叛徒
+		prerequisite={focus=RUS_FOCUS_080}
+		x=27
+		y=7
+		cost=15
+	}
+	
+	focus={
+		id=RUS_FOCUS_082#外国人更可恶
+		prerequisite={focus=RUS_FOCUS_077}
+		x=29
+		y=4
+		cost=10
+	}
+	
+	focus={
+		id=RUS_FOCUS_083#军队大清洗
+		prerequisite={focus=RUS_FOCUS_082}
+		x=29
+		y=5
+		cost=15
+	}
+	
+	focus={
+		id=RUS_FOCUS_084#整肃文化艺术界
+		prerequisite={focus=RUS_FOCUS_083}
+		x=29
+		y=6
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_085#禁止外国科学理论
+		prerequisite={focus=RUS_FOCUS_084}
+		x=29
+		y=7
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_086#搜捕间谍
+		prerequisite={focus=RUS_FOCUS_081}
+		prerequisite={focus=RUS_FOCUS_085}
+		x=28
+		y=8
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_087#个人崇拜教育
+		prerequisite={focus=RUS_FOCUS_086}
+		x=26
+		y=9
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_088#削弱苏维埃职能
+		prerequisite={focus=RUS_FOCUS_087}
+		x=26
+		y=10
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_089#完美的领袖
+		prerequisite={focus=RUS_FOCUS_088}
+		x=26
+		y=11
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_090#党内肃反运动
+		prerequisite={focus=RUS_FOCUS_086}
+		x=28
+		y=9
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_091#打击莫斯科集团
+		prerequisite={focus=RUS_FOCUS_090}
+		x=28
+		y=10
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_092#完美的党
+		prerequisite={focus=RUS_FOCUS_091}
+		x=28
+		y=11
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_093#成立“NKVD”
+		prerequisite={focus=RUS_FOCUS_086}
+		x=30
+		y=9
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_094#最佳俄罗斯人
+		prerequisite={focus=RUS_FOCUS_093}
+		x=30
+		y=10
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_095#完美的国家
+		prerequisite={focus=RUS_FOCUS_094}
+		x=30
+		y=11
+		cost=5
+	}
+	
+	focus={
+		id=RUS_FOCUS_096#召开第三次代表大会
+		prerequisite={focus=RUS_FOCUS_089}
+		prerequisite={focus=RUS_FOCUS_092}
+		prerequisite={focus=RUS_FOCUS_095}
+		x=28
+		y=12
+		cost=5
+	}
