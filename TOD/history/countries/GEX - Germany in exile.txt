@@ -201,7 +201,7 @@ set_popularities = {
 	reformism = 12
 	liberalism = 12
 	conservatism = 12
-	authoritarianis = 12
+	authoritarianism = 12
 	despotism = 12
 	totalism = 16
 }

@@ -25,8 +25,8 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/despotism_small.dds"
 	}
 	spriteType = {
-		name = "GFX_authoritarianis_small"
-		texturefile = "gfx/interface/ideologies/authoritarianis_small.dds"
+		name = "GFX_authoritarianism_small"
+		texturefile = "gfx/interface/ideologies/authoritarianism_small.dds"
 	}
 	spriteType = {
 		name = "GFX_conservatism_small"

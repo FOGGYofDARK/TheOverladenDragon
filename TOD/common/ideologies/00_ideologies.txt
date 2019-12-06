@@ -144,17 +144,17 @@ ideologies = {
 		can_be_boosted = no
 	}
 
-	authoritarianis = {
+	authoritarianism = {
 		types = {
-			authoritarianis_subtype = {}
+			authoritarianism_subtype = {}
 		}
 		dynamic_faction_names = {
-			"FACTION_NAME_AUTHORITARIANIS_1"
-			"FACTION_NAME_AUTHORITARIANIS_2"
-			"FACTION_NAME_AUTHORITARIANIS_3"
-			"FACTION_NAME_AUTHORITARIANIS_4"
-			"FACTION_NAME_AUTHORITARIANIS_5"
-			"FACTION_NAME_AUTHORITARIANIS_6"
+			"FACTION_NAME_AUTHORITARIANISM_1"
+			"FACTION_NAME_AUTHORITARIANISM_2"
+			"FACTION_NAME_AUTHORITARIANISM_3"
+			"FACTION_NAME_AUTHORITARIANISM_4"
+			"FACTION_NAME_AUTHORITARIANISM_5"
+			"FACTION_NAME_AUTHORITARIANISM_6"
 		}
 		color = { 110 110 110 }
 		rules = {
